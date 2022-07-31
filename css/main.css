@@ -173,10 +173,11 @@ header {
     .flex h2 {
         font-size: 70px;
         text-align: center;
-        margin-top: 150px;
+        margin-top: 130px !important;
     }
     .flex.start {
         justify-content: center;
+        margin-left: -5px;
     }
     .flex .image {
         display: none;
@@ -661,10 +662,6 @@ footer .copy ul li a:hover {
         content: none;
     }
 }
-
-
-
-
 @media (max-width: 768px) {
     footer .copy .idx {
         flex-direction: column-reverse;
@@ -686,6 +683,10 @@ footer .copy ul li a:hover {
 @media (max-width: 530px) {
     .iti__country-list {
         width: 376px;
+    }
+    footer .copy ul li a {
+        font-size: 10px;
+        margin-right: 20px;
     }
 }
 /* End Footer */
