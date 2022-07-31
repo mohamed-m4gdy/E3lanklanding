@@ -140,6 +140,12 @@ header {
 .lang img {
     margin-right: 1px;
 }
+
+@media (max-width: 768px) { 
+    .lang {
+        display: none;
+    }
+}
 .priv {
     padding-top: 0;
     margin-top: 91px;
@@ -567,25 +573,10 @@ header {
     .contact-us form #description,
     .iti.iti--allow-dropdown {
         width: 100%;
+        min-width: fit-content;
     }
     .iti__country-list {
         width: 570px;
-    }
-}
-@media (max-width: 768px) {
-    .iti__country-list {
-        width: 423px;
-    }
-}
-@media (max-width: 576px) {
-    .iti__country-list {
-        width: 410px;
-    }
-    
-}
-@media (max-width: 530px) {
-    .iti__country-list {
-        width: 376px;
     }
 }
 /* End Contact Us */
