@@ -12,31 +12,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .flex {
     display: flex;
     justify-content: space-between;
@@ -151,7 +126,6 @@ header {
     margin-top: 91px;
     height: 0;
     opacity: 0;
-    display: none;
     box-shadow: 0px 1px 6px var(--sec-color);
 }
 .priv.navbar-light .navbar-nav .nav-link {
@@ -243,9 +217,10 @@ header {
 }
 .about-us div .first-p {
     font-size: 18px;
+    color: #000;
     text-align: center;
     margin: 40px auto 0;
-    width: 920px;
+    max-width: 920px;
     height: 193px;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -253,34 +228,54 @@ header {
 }
 .about-us .points {
     justify-content: space-around;
-    gap: 40px 0;
 }
-.about-us .points img {
+.about-us .points img,
+.about-us img {
     margin: 26px 18px  26px 18px;
+    position: absolute;
+    z-index: 1;
 }
-.about-us .points .thr.lst img {
+.about-us .thr.lst img {
     margin: 56px 15px 56px 7px;
 }
 .about-us .points .fst,
 .about-us .points .sec,
-.about-us .points .thr {
+.about-us .thr {
     background-color: #333864;
     border-radius: 31px;
-    width: 540px;
     height: 267px;
-    
+    margin-bottom: 14px;
+    position: relative;
+    min-width: 540px;
 }
-.about-us .points div div h2 {
+.about-us .thr {
+    max-width: 540px;
+    margin-left: 25%;
+}
+.about-us .points .fst div,
+.about-us .points .sec div,
+.about-us .thr div {
+    margin-left: 260px;
+}
+.about-us .points .fst {
+    margin-right: 7px;
+}
+.about-us .points .sec {
+    margin-left: 7px;
+}
+.about-us .points div div h2,
+.about-us div div h2 {
     font-size: 30px;
     font-weight: bold;
     color: #FFFFFF;
     margin-top: 76px;
 }
-.about-us .points .thr.lst h2 {
+.about-us .thr.lst h2 {
     font-size: 27px;
     margin-top: 60px;
 }
-.about-us .points div div p {
+.about-us .points div div p,
+.about-us div div p {
     font-size: 20px;
     color: #FFFFFF;
     margin-right: 5px;
@@ -289,35 +284,33 @@ header {
 @media (max-width: 1200px) {
     .about-us .points .fst,
     .about-us .points .sec,
-    .about-us .points .thr {
-        width: 49%;
+    .about-us .thr {
+        min-width: 0;
+    }
+    .about-us .points {
+        justify-content: space-between;
     }
 }
 @media (max-width: 992px) {
-    .about-us .points .fst,
-    .about-us .points .sec,
-    .about-us .points .thr {
-        width: 95%;
+    .about-us .points {
+        flex-direction: column;
     }
-    .about-us div .first-p {
-        width: fit-content;
-    }
-    .about-us .points div div p {
-        text-align: center;
+    .about-us .thr {
+        max-width: none;
+        margin-left: 0;
     }
 }
-@media (max-width: 576px) { 
-    .about-us .points .fst,
-    .about-us .points .sec,
-    .about-us .points .thr {
-        width: 95%;
+
+@media (max-width: 560px) {
+    .about-us .points img {
+        opacity: 0.3;
     }
-    .about-us .points div div h2 {
-        font-size: 22px;
-    }
-    .about-us .points div div p {
-        font-size: 16px;
+    .about-us .points .fst div,
+    .about-us .points .sec div,
+    .about-us .thr div {
+        margin-left: 36px;
         text-align: center;
+        z-index: 1;
     }
 }
 /* End About Us */
@@ -761,6 +754,7 @@ footer .copy ul li a:hover {
         left: 50%;
         transform: translate(-50%, 50%);
         text-align: center;
+        top: -8%;
     }
     .toggle ul li {
         margin: 15px 0;
