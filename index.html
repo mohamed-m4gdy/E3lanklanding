@@ -15,6 +15,10 @@
         <!-- Jquery -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
         <!-- Main Css -->
         <link rel="stylesheet" href="css/main.css">
     </head>
@@ -106,7 +110,12 @@
         <header>
             <div class="container">
                <div class="flex text">
-                <div>
+
+                <div 
+                data-aos="flip-right" 
+                data-aos-delay="100"
+                data-aos-easing="ease-in-out">
+
                     <h2>Growing your business is <span>Easier</span> than you think</h2>
                     <div class="flex start">
                         <button>
@@ -123,7 +132,13 @@
                         </button>
                     </div>
                 </div>
-                <div class="image">
+
+                <div 
+                class="image" 
+                data-aos="flip-left" 
+                data-aos-delay="50"
+                data-aos-easing="ease-in-out">
+
                     <div>
                         <img src="images/headerframe.png" alt="MobileFrame">
                         <img src="images/headerscreen.png" alt="MobileScreen">
@@ -140,13 +155,17 @@
         <!-- Start About Us -->
         <div class="about-us" id="about">
             <div class="container">
-                <h2 class="first-h">About Us</h2>
+                <h2 class="first-h" data-aos="fade-down">About Us</h2>
                 <div>
-                    <p class="first-p">
+                    <p 
+                    class="first-p" 
+                    data-aos="fade-in"
+                    data-aos-delay="300"
+                    data-aos-easing="ease-in-out">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br> <br>
 
                         It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-<!--                     
+                        <!--                     
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                     
                         It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more 
@@ -161,14 +180,25 @@
                     </p>
                 </div>
                 <div class="points flex">
-                        <div class="fst flex">
+
+                        <div 
+                        class="fst flex" 
+                        data-aos="fade-right" 
+                        data-aos-delay="500"
+                        data-aos-easing="ease-in-out">
+                        
                             <img src="images/fst.png" alt="Watch Or Post Ads">
                             <div>
                                 <h2>Watch or post ads</h2>
                                 <p>Yes it’s as easy as that, watch ads and earn points.</p>
                             </div>
                         </div>
-                        <div class="sec flex">
+                        <div 
+                        class="sec flex" 
+                        data-aos="fade-left"
+                        data-aos-delay="500"
+                        data-aos-easing="ease-in-out">
+
                             <img src="images/2nd.png" alt="Earn Points">
                             <div>
                                 <h2>Earn points</h2>
@@ -176,7 +206,13 @@
                             </div>
                         </div>
                 </div>
-                <div class="thr lst flex">
+
+                <div 
+                class="thr lst flex" 
+                data-aos="fade-up" 
+                data-aos-delay="500"
+                data-aos-easing="ease-in-out">
+
                     <img src="images/3rd.png" alt="Buy Gift Cards">
                     <div>
                         <h2>Buy gift cards & grow your business</h2>
@@ -189,7 +225,10 @@
         <div class="business">
             <div class="overlay"></div>
             <div class="container">
-                <div>
+                <div 
+                    data-aos="fade-down"
+                    data-aos-delay="300"
+                    data-aos-easing="ease-in-out">
                     <h2>Ready to Start your journey now with E3lank and grow your Business?</h2>
                     <div class="flex center">
                         <button>
@@ -211,11 +250,20 @@
         <!-- Start How it Works -->
         <div class="works" id="works">
             <div class="container">
-                <h2>How Client app Works ?</h2>
-                <p>You only need to follow some simple steps to work on our platform</p>
+                <h2 data-aos="fade-down">How Client app Works ?</h2>
+
+                <p 
+                    data-aos="fade-in"
+                    data-aos-delay="300"
+                    data-aos-easing="ease-in-out">
+                You only need to follow some simple steps to work on our platform</p>
                 <div class="tabs">
 
-                    <div class="tab">
+                    <div 
+                        class="tab"  
+                        data-aos="fade-left"
+                        data-aos-delay="300"
+                        data-aos-easing="ease-in-out">
                         <button class="tablinks active" onclick="tabs(event, 'Step1')">Step1</button>
                         <button class="tablinks" onclick="tabs(event, 'Step2')">Step2</button>
                         <button class="tablinks" onclick="tabs(event, 'Step3')">Step3</button>
@@ -224,7 +272,11 @@
                     </div>
 
                     <div id="Step1" class="tabcontent bl">
-                        <div class="flex cntr steps">
+                        <div 
+                            class="flex cntr steps"   
+                            data-aos="fade-right"
+                            data-aos-delay="300"
+                            data-aos-easing="ease-in-out">
 
                             <div class="tabframe">
                                 <img src="images/tabframe1.png" alt="MobileFrame">
@@ -244,7 +296,11 @@
                     </div>
 
                     <div id="Step2" class="tabcontent">
-                        <div class="flex cntr steps">
+                        <div 
+                            class="flex cntr steps"   
+                            data-aos="fade-right"
+                            data-aos-delay="300"
+                            data-aos-easing="ease-in-out">
 
                             <div class="tabframe">
                                 <img src="images/tabframe1.png" alt="MobileFrame">
@@ -264,7 +320,11 @@
                     </div>
 
                     <div id="Step3" class="tabcontent">
-                        <div class="flex cntr steps">
+                        <div 
+                            class="flex cntr steps"   
+                            data-aos="fade-right"
+                            data-aos-delay="300"
+                            data-aos-easing="ease-in-out">
 
                             <div class="tabframe">
                                 <img src="images/tabframe1.png" alt="MobileFrame">
@@ -284,7 +344,11 @@
                     </div>
 
                     <div id="Step4" class="tabcontent">
-                        <div class="flex cntr steps">
+                        <div 
+                            class="flex cntr steps"   
+                            data-aos="fade-right"
+                            data-aos-delay="300"
+                            data-aos-easing="ease-in-out">
 
                             <div class="tabframe">
                                 <img src="images/tabframe1.png" alt="MobileFrame">
@@ -304,7 +368,11 @@
                     </div>
 
                     <div id="Step5" class="tabcontent">
-                        <div class="flex cntr steps">
+                        <div 
+                            class="flex cntr steps"   
+                            data-aos="fade-right"
+                            data-aos-delay="300"
+                            data-aos-easing="ease-in-out">
 
                             <div class="tabframe">
                                 <img src="images/tabframe1.png" alt="MobileFrame">
@@ -324,17 +392,30 @@
                     </div>
 
                 </div>
-                <span class="hr"></span>
+                <span 
+                    class="hr"    
+                    data-aos="fade-in"
+                    data-aos-delay="10000"
+                    data-aos-easing="ease-in-out"></span>
             </div>
         </div>
         <!-- Start How it Works  -->
         <div class="works">
             <div class="container">
-                <h2>How Provider app Works ?</h2>
-                <p>You only need to follow some simple steps to work on our platform</p>
+                <h2 data-aos="fade-down">How Provider app Works ?</h2>
+                <p 
+                    data-aos="fade-in"
+                    data-aos-delay="300"
+                    data-aos-easing="ease-in-out">
+                You only need to follow some simple steps to work on our platform
+                </p>
                 <div class="tabs">
 
-                    <div class="tab">
+                    <div 
+                        class="tab"   
+                        data-aos="fade-left"
+                        data-aos-delay="300"
+                        data-aos-easing="ease-in-out">
                         <button class="tablinkss active" onclick="tabss(event, 'Step6')">Step1</button>
                         <button class="tablinkss" onclick="tabss(event, 'Step7')">Step2</button>
                         <button class="tablinkss" onclick="tabss(event, 'Step8')">Step3</button>
@@ -343,7 +424,11 @@
                     </div>
 
                     <div id="Step6" class="tabcontentt bl">
-                        <div class="flex cntr steps">
+                        <div 
+                            class="flex cntr steps"
+                            data-aos="fade-right"
+                            data-aos-delay="300"
+                            data-aos-easing="ease-in-out">
 
                             <div class="tabframe">
                                 <img src="images/tabframe1.png" alt="MobileFrame">
@@ -363,7 +448,11 @@
                     </div>
 
                     <div id="Step7" class="tabcontentt">
-                        <div class="flex cntr steps">
+                        <div 
+                            class="flex cntr steps"
+                            data-aos="fade-right"
+                            data-aos-delay="300"
+                            data-aos-easing="ease-in-out">
 
                             <div class="tabframe">
                                 <img src="images/tabframe1.png" alt="MobileFrame">
@@ -383,7 +472,11 @@
                     </div>
 
                     <div id="Step8" class="tabcontentt">
-                        <div class="flex cntr steps">
+                        <div 
+                            class="flex cntr steps"
+                            data-aos="fade-right"
+                            data-aos-delay="300"
+                            data-aos-easing="ease-in-out">
 
                             <div class="tabframe">
                                 <img src="images/tabframe1.png" alt="MobileFrame">
@@ -403,7 +496,11 @@
                     </div>
 
                     <div id="Step9" class="tabcontentt">
-                        <div class="flex cntr steps">
+                        <div 
+                            class="flex cntr steps"
+                            data-aos="fade-right"
+                            data-aos-delay="300"
+                            data-aos-easing="ease-in-out">
 
                             <div class="tabframe">
                                 <img src="images/tabframe1.png" alt="MobileFrame">
@@ -423,7 +520,11 @@
                     </div>
 
                     <div id="Step10" class="tabcontentt">
-                        <div class="flex cntr steps">
+                        <div 
+                            class="flex cntr steps"
+                            data-aos="fade-right"
+                            data-aos-delay="300"
+                            data-aos-easing="ease-in-out">
 
                             <div class="tabframe">
                                 <img src="images/tabframe1.png" alt="MobileFrame">
@@ -443,20 +544,67 @@
                     </div>
 
                 </div>
-                <span class="hr"></span>
+                <span 
+                    class="hr"    
+                    data-aos="fade-in"
+                    data-aos-delay="10000"
+                    data-aos-easing="ease-in-out"></span>
             </div>
         </div>
         <!-- Start Contact Us -->
         <div class="contact-us" id="contact">
             <div class="container">
-                <h2>Contact Us</h2>
-                <div class="parg">We will contact you as soon as possible.</div>
+                <h2 data-aos="fade-down">Contact Us</h2>
+                <div 
+                    class="parg"
+                    data-aos="fade-in"
+                    data-aos-delay="300"
+                    data-aos-easing="ease-in-out">
+                    We will contact you as soon as possible.</div>
+
                 <form class="row" action="">
-                    <input class="col-5 widt" type="text" id="full-name" name="full-name" placeholder="Full Name">
-                    <input class="col-5 widt" type="tel" name="number" id="number" placeholder="">
-                    <input class="col-12 widt" type="email" name="email" id="email" placeholder="Business Email">
-                    <textarea   name="description" id="description" cols="30" rows="10" placeholder="Description “ how can we help you? “"></textarea>
-                    <input class="sub" type="submit">
+                    <input 
+                        class="col-5 widt" 
+                        type="text" id="full-name" 
+                        name="full-name" 
+                        placeholder="Full Name"
+                        data-aos="slide-right"
+                        data-aos-delay="50"
+                        data-aos-easing="ease-in-out">
+
+                    <input 
+                        class="col-5 widt" 
+                        type="tel" name="number" 
+                        id="number" placeholder=""
+                        data-aos="slide-left"
+                        data-aos-delay="50"
+                        data-aos-easing="ease-in-out">
+
+                    <input 
+                        class="col-12 widt" 
+                        type="email" 
+                        name="email" 
+                        id="email" 
+                        placeholder="Business Email"
+                        data-aos="slide-left"
+                        data-aos-delay="50"
+                        data-aos-easing="ease-in-out">
+
+                    <textarea 
+                        name="description" 
+                        id="description" 
+                        cols="30" rows="10" 
+                        placeholder="Description “ how can we help you? “"
+                        data-aos="slide-right"
+                        data-aos-delay="50"
+                        data-aos-easing="ease-in-out"></textarea>
+
+                    <input 
+                        class="sub" 
+                        type="submit"
+                        data-aos="flip-right"
+                        data-aos-delay="300"
+                        data-aos-easing="ease-in-out">
                 </form>
             </div>
         </div>
@@ -508,6 +656,10 @@
         </footer>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery-1.12.4.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
         <script src="js/main.js"></script>
     </body>
 </html>

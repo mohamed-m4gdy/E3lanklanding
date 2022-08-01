@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* Start Global Rules */
 
 body {
@@ -13,23 +20,41 @@ body {
 
 
 .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .flex.center {
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .flex.cntr {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .flex.start {
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
 }
 .flex button {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: #000;
     border: none;
     outline: none;
@@ -38,6 +63,8 @@ body {
     height: 42px;
     border-radius: 21px;
     margin-top: 40px;
+    -webkit-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
     transition: var(--main-transition);
 }
 .flex button:last-of-type {
@@ -69,6 +96,7 @@ body {
 /* Start navbar */
 header {
     background-image: url("../images/header.png");
+    overflow: hidden;
 }
 .nav {
     background-color: #122D4C;
@@ -82,11 +110,16 @@ header {
     height: 63px;
 }
 .navbar-expand-lg {
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .navbar-collapse {
-    flex-grow: 0;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
 }
 .navbar-expand-lg .navbar-collapse {
     margin-right: 30px;
@@ -126,7 +159,8 @@ header {
     margin-top: 91px;
     height: 0;
     opacity: 0;
-    box-shadow: 0px 1px 6px var(--sec-color);
+    -webkit-box-shadow: 0px 1px 6px var(--sec-color);
+            box-shadow: 0px 1px 6px var(--sec-color);
 }
 .priv.navbar-light .navbar-nav .nav-link {
     color: var(--sec-color);
@@ -173,10 +207,12 @@ header {
     .flex h2 {
         font-size: 70px;
         text-align: center;
-        margin-top: 130px !important;
+        margin-top: 90px !important;
     }
     .flex.start {
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         margin-left: -5px;
     }
     .flex .image {
@@ -189,11 +225,14 @@ header {
     background-color: var(--section-background);
     padding-top: 105px;
     padding-bottom: 113px;
+    overflow: hidden;
 }
 .about-us .first-h {
     margin: auto;
     color: var(--sec-color);
     position: relative;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     font-weight: 600;
 }
@@ -223,12 +262,14 @@ header {
     margin: 40px auto 0;
     max-width: 920px;
     height: 193px;
-    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
     overflow: hidden;
     margin-bottom: 70px;
 }
 .about-us .points {
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 .about-us .points img,
 .about-us img {
@@ -289,12 +330,17 @@ header {
         min-width: 0;
     }
     .about-us .points {
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
 }
 @media (max-width: 992px) {
     .about-us .points {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .about-us .thr {
         max-width: none;
@@ -309,7 +355,7 @@ header {
     .about-us .points .fst div,
     .about-us .points .sec div,
     .about-us .thr div {
-        margin-left: 36px;
+        margin-left: 18px;
         text-align: center;
         z-index: 1;
     }
@@ -367,12 +413,19 @@ header {
     padding-bottom: 50px;
 }
 .tab {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .tabs {
     padding-bottom: 100px;
+    overflow: hidden;
 } 
 .tab button {
     margin-left: 36px;
@@ -457,7 +510,10 @@ header {
 }
 @media (max-width: 992px) {
     .steps {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .tabcontent .flex h3,
     .tabcontentt .flex h3 {
@@ -503,6 +559,7 @@ header {
     width: 82%;
     margin: 0 auto;
     gap: 24px 25px;
+    overflow: hidden;
 }
 .contact-us form .widt {
     min-width: 445px;
@@ -532,6 +589,8 @@ header {
     outline: none;
 }
 .contact-us form .sub {
+    background: -webkit-gradient(linear, left top, left bottom, from(#E55997), to(#B94BAC));
+    background: -o-linear-gradient(#E55997, #B94BAC);
     background: linear-gradient(#E55997, #B94BAC);
     font-size: 16px;
     font-weight: 600;
@@ -568,6 +627,8 @@ header {
     .contact-us form #description,
     .iti.iti--allow-dropdown {
         width: 100%;
+        min-width: -webkit-fit-content;
+        min-width: -moz-fit-content;
         min-width: fit-content;
     }
     .iti__country-list {
@@ -639,6 +700,8 @@ footer .copy ul li a {
     font-size: 16px;
     text-decoration: none;
     margin-left: 55px;
+    -webkit-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
     transition: var(--main-transition);
 }
 footer .copy ul li a:hover {
@@ -647,7 +710,10 @@ footer .copy ul li a:hover {
 
 @media (max-width: 992px) {
     .flx {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 30px;
         padding-top: 15px;
     }
@@ -664,7 +730,10 @@ footer .copy ul li a:hover {
 }
 @media (max-width: 768px) {
     footer .copy .idx {
-        flex-direction: column-reverse;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
     }
     footer .copy ul {
         margin-bottom: 7px;
@@ -738,22 +807,36 @@ footer .copy ul li a:hover {
         width: 30px;
         height: 30px;
         background-color: var(--sec-color);
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         border-radius: 15px;
         cursor: pointer;
+        -webkit-transition: var(--main-transition);
+        -o-transition: var(--main-transition);
         transition: var(--main-transition);
-        transform: scaleY(1);
+        -webkit-transform: scaleY(1);
+            -ms-transform: scaleY(1);
+                transform: scaleY(1);
     }
     .toggle .close:hover {
         background-color: var(--main-color);
-        transform: scaleY(-1);
+        -webkit-transform: scaleY(-1);
+            -ms-transform: scaleY(-1);
+                transform: scaleY(-1);
     }
     .toggle ul {
         position: absolute;
         left: 50%;
-        transform: translate(-50%, 50%);
+        -webkit-transform: translate(-50%, 50%);
+            -ms-transform: translate(-50%, 50%);
+                transform: translate(-50%, 50%);
         text-align: center;
         top: -8%;
     }
@@ -761,11 +844,13 @@ footer .copy ul li a:hover {
         margin: 15px 0;
     }
     .toggle ul li a {
-        font-size: 35px;
+        font-size: 30px;
         font-weight: 500;
         color: var(--sec-color);
         padding: 5px 50px;
         position: relative;
+        -webkit-transition: all var(--main-transition) ease;
+        -o-transition: all var(--main-transition) ease;
         transition: all var(--main-transition) ease;
         line-height: 50px;
     }
@@ -778,12 +863,20 @@ footer .copy ul li a:hover {
         height: 75%;
         background-color: var(--main-color);
         border-radius: 50px;
-        transform: scaleY(0);
+        -webkit-transform: scaleY(0);
+            -ms-transform: scaleY(0);
+                transform: scaleY(0);
+        -webkit-transition: -webkit-transform var(--main-transition) ease;
+        transition: -webkit-transform var(--main-transition) ease;
+        -o-transition: transform var(--main-transition) ease;
         transition: transform var(--main-transition) ease;
+        transition: transform var(--main-transition) ease, -webkit-transform var(--main-transition) ease;
         z-index: -1;
     }
     .toggle ul li a:hover::after {
-        transform: scaleY(1);
+        -webkit-transform: scaleY(1);
+            -ms-transform: scaleY(1);
+                transform: scaleY(1);
     }
     .toggle ul li a:hover {
         color: #fff;
