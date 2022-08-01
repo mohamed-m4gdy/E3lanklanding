@@ -535,8 +535,19 @@ header {
 }
 
 @media (max-width: 768px) {
+    .tab {
+        flex-wrap: wrap;
+        margin-right: 10px;
+    }
     .tab button {
         margin-left: 10px;
+        width: 60px;
+        height: 28px;
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    .tabframe {
+        margin-top: 45px ;
     }
     .tabcontent .circle,
     .tabcontentt .circle {
@@ -545,9 +556,6 @@ header {
     .hr {
         margin-top: 0;
         margin-bottom: 35px;
-    }
-    .tab {
-        margin-right: 10px;
     }
 }
 /* End How It Works */
